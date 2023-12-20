@@ -40,7 +40,7 @@ const Navbar = () => {
 
   const searchPet = async() => {
     try {
-      const response = await axios.get(`http://localhost:3000/pets/find?type=${search}`)
+      const response = await axios.get(`https://petshop-api-gahi.onrender.com/pets/find?type=${search}`)
       if(response.data.error){
         toast.error(response.data.error)
       }
@@ -57,7 +57,7 @@ const Navbar = () => {
   const filteredPet = async () => {
     try {
       if (search) {
-        const response = await axios.get(`http://localhost:3000/pets/filters?type=${search}&age=${ageRange}&breed=${breed}&Indian=${isIndian}`)
+        const response = await axios.get(`https://petshop-api-gahi.onrender.com/pets/filters?type=${search}&age=${ageRange}&breed=${breed}&Indian=${isIndian}`)
         
         if (response.data.error) {
           toast.error(response.data.error);

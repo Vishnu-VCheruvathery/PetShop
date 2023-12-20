@@ -1,0 +1,45 @@
+.navbar{
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    padding: 10px;
+}
+
+.title{
+    flex: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+}
+
+.buttons{
+    flex: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.search{
+    width: 100%;
+    border: 1px solid gray;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    
+}
+
+.search input{
+   padding: 5px;
+   font-size: 1.2em;
+}
+
+.filters{
+    width: 100%;
+    border: 1px solid gray;
+    gap: 5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

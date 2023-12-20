@@ -1,0 +1,35 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 50px auto;
+    border: 1px solid gray;
+    padding: 20px;
+    gap: 5px;
+    border-radius: 0.5em;
+}
+
+.form label{
+    font-size: 1.2em;
+}
+.form input{
+    font-size: 1.2em;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 0.2em;
+}
+
+.form button{
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 0.2em;
+    background-color: rgb(20, 204, 13);
+   
+   
+    color: white;
+}
+
+.form button:hover{
+    background-color: rgb(6, 172, 6);
+}

@@ -25,7 +25,7 @@ const Post = () => {
 
   const Post = async() => {
      try {
-       const response = await axios.post('http://localhost:3000/pets', {
+       const response = await axios.post('https://petshop-api-gahi.onrender.com/pets', {
         name, price, type, breed, weight, height, personality, Indian, age, imageUrl,Seller
        })
        toast.success('Pet added successfully')

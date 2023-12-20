@@ -33,7 +33,7 @@ const Sidebar = ({open, onClose}) => {
 
    const getSellers = async() => {
         try {
-          const response = await axios.get('http://localhost:3000/users/sellers')
+          const response = await axios.get('https://petshop-api-gahi.onrender.com0/users/sellers')
           setSellers(response.data)
           console.log(response.data)
         } catch (error) {
@@ -43,7 +43,7 @@ const Sidebar = ({open, onClose}) => {
 
    const getBuyers = async() => {
     try {
-      const response = await axios.get('http://localhost:3000/users/buyers')
+      const response = await axios.get('https://petshop-api-gahi.onrender.com/users/buyers')
       setBuyers(response.data)
       console.log(response.data)
     } catch (error) {

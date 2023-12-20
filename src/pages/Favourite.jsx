@@ -18,7 +18,7 @@ const Favourite = () => {
   }
   const getPets = async({id}) => {
        try {
-        const response = await axios.get(`http://localhost:3000/pets/favs/${id}`)
+        const response = await axios.get(`https://petshop-api-gahi.onrender.com/pets/favs/${id}`)
         if(response.data.error){
           toast.error(response.data.error)
         }

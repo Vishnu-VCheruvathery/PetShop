@@ -16,7 +16,7 @@ const SaveCard = ({card}) => {
  
    const deleteSavedPet = async({id, petId}) => {
     try {
-      const response = await axios.delete(`http://localhost:3000/pets/favs/${id}/${petId}`)
+      const response = await axios.delete(`https://petshop-api-gahi.onrender.com/pets/favs/${id}/${petId}`)
       if(response.data.error){
         toast(response.data.error)
       }

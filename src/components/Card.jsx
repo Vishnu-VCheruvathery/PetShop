@@ -17,7 +17,7 @@ const PetCard = ({ card }) => {
    }
     const postFav = async({id, petId}) => {
       try {
-        const response = await axios.post(`http://localhost:3000/pets/favs/${id}/${petId}`)
+        const response = await axios.post(`https://petshop-api-gahi.onrender.com/pets/favs/${id}/${petId}`)
         if(response.data.error){
           toast.error(response.data.error)
         }
@@ -31,7 +31,7 @@ const PetCard = ({ card }) => {
 
     const deletePet = async({petId}) => {
          try {
-          const response = await axios.delete(`http://localhost:3000/pets/${petId}`)
+          const response = await axios.delete(`https://petshop-api-gahi.onrender.com/pets/${petId}`)
           toast.success(response.data.message)
           return response.data
          } catch (error) {

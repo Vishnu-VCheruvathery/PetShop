@@ -21,7 +21,7 @@ const Form = () => {
         return;
       }
   
-      await axios.post('http://localhost:3000/users/register', {
+      await axios.post('https://petshop-api-gahi.onrender.com/users/register', {
         username: username,
         password: password,
         type: type,
@@ -44,7 +44,7 @@ const Form = () => {
         return;
       }
   
-      const response = await axios.post('http://localhost:3000/users/login', {
+      const response = await axios.post('https://petshop-api-gahi.onrender.com/users/login', {
         username: loggedUser,
         password: loggedPassword,
       });

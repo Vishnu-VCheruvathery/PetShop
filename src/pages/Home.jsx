@@ -9,7 +9,7 @@ const Home = () => {
    
    async function getPost(){
       try {
-         const response = await axios.get('http://localhost:3000/pets')
+         const response = await axios.get('https://petshop-api-gahi.onrender.com/pets')
          setPets(response.data)
       } catch (error) {
         console.log(error)

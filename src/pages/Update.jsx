@@ -23,7 +23,7 @@ const Update = () => {
    
     const Update = async() => {
         try {
-          const response = await axios.put(`http://localhost:3000/pets/${id}`, {
+          const response = await axios.put(`https://petshop-api-gahi.onrender.com/pets/${id}`, {
            name, price, type, breed, weight, height, personality, Indian, age, imageUrl
           })
           toast.success('Pet info updated')
